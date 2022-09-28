@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt ol</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+
+
+
+        .kayıtol {
+            float: right;
+            margin: 10px;
+            color: black;
+        }
+
+        .kayıtol:hover {
+            color: blueviolet;
+        }
+
+        header {
+
+            background-color: #fff;
+            padding: 10px;
+        }
+
+
+
+        header a img:hover {
+            transform: scale(1.2);
+        }
+
+        .baslik {
+            background-color: #fff;
+            display: flex;
+            padding: 5px;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+        }
+
+        .baslik a {
+            margin: auto;
+            padding: auto;
+            color: black;
+        }
+
+        .baslik a:hover {
+            color: blueviolet;
+        }
+
+        main {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form1 {
+            width: 50%;
+            background-color: #fff;
+            margin: 50px;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 00.5px solid gray;
+            border-right: 00.5px solid gray;
+        }
+
+        .form2 {
+            height: 200px;
+            background-color: #fff;
+            margin-right: 0px;
+
+        }
+
+        .formici {
+            width: 80%;
+            margin: 10px;
+            height: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            vertical-align: middle;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headertop">
+            <a href="index.html"><img width="50px" height="50px" src="home-symbol-button.jpg"></a>
+            <a class="kayıtol" href="kayit.html" style="color: blueviolet;"">Kayıt ol</a>
+                  <span class=" kayıtol">/</span>
+                <a class="kayıtol" href="giris.html">Giriş yap</a>
+        </div>
+        <div class="baslik">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="Eğlence.html">Modumuz!</a>
+            <a href="ülkeler.html">Ülkeler</a>
+            <a href="iletişim.html">İletişim</a>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="form1">
+            <form>
+
+                <h3 style="font-family: 'Courier New', Courier, monospace;">Kayıt Ol</h3>
+                <br>
+                <input class="formici" type="text" name="adı" placeholder="Adınız" maxlength="40">
+
+                <input class="formici" type="text" name="soyad" placeholder="Soyadınız" maxlength="40">
+
+                <input class="formici" type="text" name="kullanıcıadı" placeholder="Kullanıcı Adı veya E-mail"
+                    maxlength="40">
+
+                <input class="formici" type="password" name="password1" placeholder="Parolanız" maxlength="30"><br>
+
+                <input class="formici" type="password" name="password2" placeholder="Parolanız Tekrar"
+                    maxlength="30"><br><br>
+
+                <input class="formici" type="submit" name="submit" value="Kayıt Ol">
+
+            </form>
+
+
+
+        </div>
+
+    </main>
+</body>
+
+</html>

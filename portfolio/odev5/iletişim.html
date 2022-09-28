@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+
+
+
+        .kayıtol {
+            float: right;
+            margin: 10px;
+            color: black;
+        }
+
+        .kayıtol:hover {
+            color: blueviolet;
+        }
+
+        header {
+
+            background-color: #fff;
+            padding: 10px;
+        }
+
+
+
+        header a img:hover {
+            transform: scale(1.2);
+        }
+
+        .baslik {
+            background-color: #fff;
+            display: flex;
+            padding: 5px;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+        }
+
+        .baslik a {
+            margin: auto;
+            padding: auto;
+            color: black;
+        }
+
+        .baslik a:hover {
+            color: blueviolet;
+        }
+
+        main {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form1 {
+            width: 50%;
+            background-color: #fff;
+            margin: 50px;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 00.5px solid gray;
+            border-right: 00.5px solid gray;
+        }
+
+        .form2 {
+            height: 200px;
+            background-color: #fff;
+            margin-right: 0px;
+
+        }
+
+        .formici {
+            width: 80%;
+            margin: 10px;
+            height: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            vertical-align: middle;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headertop">
+            <a href="index.html"><img width="50px" height="50px" src="home-symbol-button.jpg"></a>
+            <a class="kayıtol" href="kayit.html">Kayıt ol</a>
+            <span class="kayıtol">/</span>
+            <a class="kayıtol" href="giris.html">Giriş yap</a>
+        </div>
+
+        <div class="baslik">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="Eğlence.html">Modumuz!</a>
+            <a href="ülkeler.html">Ülkeler</a>
+            <a href="iletişim.html" style="color: blueviolet;">İletişim</a>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="form1">
+            <form>
+                <div>
+                    <h3 style="font-family: 'Courier New', Courier, monospace;">Bizimle İletişime Geçin</h3>
+                    <br>
+                    <input class="formici" type="text" name="adı" placeholder="Adınız" maxlength="40">
+                </div>
+
+
+                <input class="formici" type="text" name="soyad" placeholder="Soy Adınız" maxlength="20"><br>
+
+
+                <input class="formici" type="email" name="mail" placeholder="E-mail Adresiniz" maxlength="40"><br><br>
+
+                <label for="konu">Bize İletmek İstediğiniz Konu Ne Hakkında?</label>
+                <input type="radio" name="konu">
+                <label for="sikayet">Şikayet</label>
+                <input type="radio" name="konu">
+                <label for="oneri">Öneri</label>
+                <input type="radio" name="konu" checked>
+                <label for="istek">İstek</label>
+                <textarea name="konu" style="height: 50px;" class="formici" rows="5" cols="25" placeholder="İletiniz?"
+                    maxlength="400"></textarea><br>
+
+                <label for="name">Cinsiyet:</label>
+                <input type="radio" name="gender">
+                <label for="erkek">Erkek</label>
+                <input type="radio" name="gender">
+                <label for="Kadın">Kadın</label><br><br>
+
+                <input class="formici" type="submit" name="submit" value="Gönder">
+
+            </form>
+            <hr>
+            <p style="float: left;">Telefonumuz: 0512 345 67 89</p><br>
+            <p style="float: left;">Adresimiz:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.08675484182!2d28.870402327879187!3d40.979581113106406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd361d9f2bcd%3A0x109cda61c48e4b76!2sNeos%20Yaz%C4%B1l%C4%B1m%20Akademi!5e0!3m2!1str!2str!4v1662655302886!5m2!1str!2str"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="form2">
+            <form>
+
+
+
+
+
+                <!-- <label for="adı">Ad:</label><br>
+            <input type="text" name="adı" placeholder="Adınız"><label class="date" for="date">Tarih:</label><input
+                class="date1" type="date" name="date" id="today"><br>
+            <label for="soyad">Soyad:</label><br>
+            <input type="text" name="soyad" placeholder="Soyadınız"><br>
+            <label for="mail">E-mail veya Kullanıcı Adı:</label><br>
+            <input type="text" name="mail" placeholder="E-mail veya Kullanıcı Adı"><br>
+            <label for="password">Parola:</label><br>
+            <input type="password" name="password" placeholder="******"><br><br>
+            <input type="submit" name="submit" value="Kayıt Ol"><br> -->
+
+
+            </form>
+
+        </div>
+    </main>
+
+
+
+
+
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        if (month < 10) { month = "0" + month }
+        day = date.getDate();
+        if (day < 10) { day = "0" + day }
+        document.getElementById("today").value = year + "-" + month + "-" + day;
+    </script>
+</body>
+
+</html>

@@ -1047,6 +1047,12 @@ iframe {
         overflow: visible;
         background-color: rgba(255, 255, 255, 0);
     }
+    
+    .navbar:active {
+        height: auto;
+        overflow: visible;
+        background-color: rgba(255, 255, 255, 0);
+    }
 
     .navbar a {
         width: 40px;
